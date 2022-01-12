@@ -10,22 +10,30 @@
 <body>
     <h1 id="title">Papper Rock and Scissors game</h1>
     <div id="img-box">
-        <div class="img" id="papper"><img src="img/papper.png"></div>
-        <div class="img" id="rock"><img src="img/rock.png"></div>
-        <div class="img" id="scissors"><img src="img/scissors.png"></div>
+        <div class="frame">
+            <div class="img" id="papper" onclick ="playGame('papper')"><img src="img/papper.png"></div>
+        </div>
+        <div class="frame">
+            <div class="img" id="rock" onclick ="playGame('rock')"><img src="img/rock.png"></div>
+        </div>
+        <div class="frame">
+            <div class="img" id="scissors" onclick ="playGame('scissors')"><img src="img/scissors.png"></div>
+        </div>
     </div>
     <div id="bottom">
         <div id="counter-box">
             <div id="player-counter">
                 <div class="counter-text">Player</div>
-                <div class="counter-number">5</div>
+                <div class="counter-number" id="player">5</div>
             </div>
             <div id="ia-counter">
                 <div class="counter-text">Computer</div>
-                <div class="counter-number">5</div> 
+                <div class="counter-number" id="pc">5</div> 
             </div>
         </div>  
-        <div id="text-box">This is a placeholder text...</div>
+        <div id="text-box">
+            <div id="text"></div>
+        </div>
     <script src="index.js"></script>
 </div>
 </body>

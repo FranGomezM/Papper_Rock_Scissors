@@ -21,6 +21,14 @@ body {
     height: 450px;
 }
 
+.frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 350px;
+    height: 350px;
+}
+
 img {
     width: 300px;
     height: 300px;
@@ -56,6 +64,10 @@ img {
 }
 
 #text-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1102px;
+    height: 250px;
     font-size: 72px;
-    text-align: center;
 }
